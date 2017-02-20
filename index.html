@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Fake Fresno State</title>
+
+        <style>
+                * {
+                    margin:0;
+                    padding:0;
+                }
+                .container {
+                    height:100%;
+                    display:flex;
+                    margin:0 auto;
+                    min-height:500px;
+                    max-width:860px;
+                    flex-direction: column;
+                }
+                header.main-header  {
+                    width:100%;
+                    height:50px;
+                }
+                img.main-logo {
+                    margin-top:25px;
+                    height:25px;
+            
+                }
+                .search-container {
+                    width:450px;
+                    float:right;
+                    margin-top:25px;
+                }
+                div.main-content {
+                    flex:1;
+                }
+                .search {
+                    background-color: #cecece;
+                    float:right;
+                    height:25px;
+                    width:330px;
+                }
+                div.search-container img {
+                    width:120px;
+                }
+                footer.main-footer  {
+                    background-color:#CCC;
+                    width:100%;
+                    height:50px;
+                }
+                nav.main-navigation ul {
+                    list-style-type:none;
+                }
+                nav.main-navigation li {
+                    display:inline-block;
+                }
+                nav.main-navigation a {
+                     text-decoration:none;
+                     padding:10px 15px;
+                     display:block;
+                     border: 1px solid #CCC;
+                     margin:10px 0 0 0;
+                }
+                .slider img {
+                    width:70%;
+                    height:300px;
+                }
+                .slider-small {
+                    width: 30%;
+                    height: 300px;
+                    background-color: blue;
+                    float: right;
+                }
+                ul.slider-sm img {
+                    width:100%;
+                    height:100px;
+                }
+                .middle-content {
+                    height:300px;
+                    position:relative;
+                }
+                aside.sidebar-left {
+                    width: 20%;
+                    height: 100%;
+                    background-color: #CCC;
+                    float:left;
+                }
+                div.latest-news {
+                    position: absolute;
+                    height: 100%;
+                    width: 50%;
+                    background: red;
+                    left: 20%;
+                }
+                aside.sidebar-right {
+                    width: 30%;
+                    height: 100%;
+                    background: green;
+                    float: right;
+                }
+                .sidebar-nav ul {
+
+                }
+                .sidebar-nav li {
+                    width:100%;
+                    border-bottom:1px solid #CCC;
+                }
+                .sidebar-nav a {
+
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <img class="main-logo" src="./img/csuf-logo.gif" alt="logo">
+                <div class="search-container">
+                    <img src="./img/give-now.gif" alt="give">
+                    <div class="search">
+                        <p>asdf</p>
+                    </div>
+                </div>
+            </header>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Student Life</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Athletics</a></li>
+                </ul>
+            <nav>
+            <div class="main-content">
+                <div class="slider">
+                    <img src="./img/slider.jpg" alt="slider image">
+                    <div class="slider-small">
+                        <ul class="slider-sm" >
+                            <li><img src="./img/slider4.jpg" alt="image"></li>
+                            <li><img src="./img/slider2.jpg" alt="image"></li>
+                            <li><img src="./img/slider3.jpg" alt="image"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="middle-content">
+                    <aside class="sidebar-left">
+                        <ul class="sidebar-nav">
+                            <li><a href="#">Future Student</a></li>
+                            <li><a href="#">Current Student</a></li>
+                            <li><a href="#">Faculty</a></li>
+                            <li><a href="#">parents</a></li>
+                            <li><a href="#">Alumni</a></li>
+                        </ul>
+                    </aside>
+                    <div class="latest-news">
+
+                    </div>
+                    <aside class="sidebar-right">
+
+                    </aside>
+
+                    <p>asdf</p>
+                </div>
+            </div>
+            <footer class="main-footer">footer text</footer>
+        </div> 
+    </body>
+</html>
