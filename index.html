@@ -44,15 +44,16 @@
                     width:120px;
                 }
                 footer.main-footer  {
-                    background-color:#CCC;
                     width:100%;
-                    height:50px;
+                    padding:10px;   
+                    
                 }
                 nav.main-navigation ul {
                     list-style-type:none;
                 }
                 nav.main-navigation li {
-                    display:inline-block;
+                    display:table-cell;
+                    width:20%;
                 }
                 nav.main-navigation a {
                      text-decoration:none;
@@ -98,15 +99,89 @@
                     background: green;
                     float: right;
                 }
-                .sidebar-nav ul {
-
+                ul.sidebar-nav   {
+                    list-style-type: none;
                 }
                 .sidebar-nav li {
                     width:100%;
                     border-bottom:1px solid #CCC;
+                
                 }
+             
                 .sidebar-nav a {
-
+                    padding:20px;
+                    display:block;
+                    text-decoration:none;
+                    font-weight:bold;
+                    font-size:16px;
+                }
+                .list-item-gradient {
+                    background: rgba(226,226,226,1);
+                    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 70%, rgba(209,209,209,1) 86%, rgba(254,254,254,1) 100%);
+                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(70%, rgba(219,219,219,1)), color-stop(86%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+                    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 70%, rgba(209,209,209,1) 86%, rgba(254,254,254,1) 100%);
+                    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 70%, rgba(209,209,209,1) 86%, rgba(254,254,254,1) 100%);
+                    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 70%, rgba(209,209,209,1) 86%, rgba(254,254,254,1) 100%);
+                    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 70%, rgba(209,209,209,1) 86%, rgba(254,254,254,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+                }
+                .top-nav-gradient {
+                    background: rgba(255,255,255,1);
+                    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+                    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+                    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+                    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+                    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+                }
+                .bottom-container {
+                    background-color:#CCC;
+                }
+                .bottom-item {
+                    width: 31%;
+                    float: left;
+                    padding: 1.15%;
+                    background-color: #f1f1f1;
+                }
+                .bottom-image {
+                    width:100%;
+                }
+                .bottom-header {
+                    background-color:#0c387c;
+                    color:#FFF;
+                    font-size: 18px;
+                    padding: 4px 8px;
+                }
+                .bottom-text, a.read-more-link  {
+                    padding:6px 0;
+                }
+                a.read-more-link {
+                    text-decoration:none;
+                }
+                .footer-container-left {
+                    width: 66%;
+                    float: left;
+                    height: 130px;
+                    border-right:2px solid #CCC;
+                }
+                .footer-container-right {
+                    width: 30%;
+                    float: left;
+                    height: 130px;
+                }
+                .fs-name-image {
+                    position: absolute;
+                    left: 250px; 
+                }
+                .social-media-icons {
+                    list-style-type:none;
+                }
+                ul.social-media-icons {
+                    float:right;
+                }
+                ul.social-media-icons img {
+                    width:20px;
                 }
         </style>
     </head>
@@ -124,17 +199,17 @@
             </header>
             <nav class="main-navigation">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">Academics</a></li>
-                    <li><a href="#">Student Life</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Athletics</a></li>
+                    <li class="top-nav-gradient"><a href="#">About</a></li>
+                    <li class="top-nav-gradient"><a href="#">Admission</a></li>
+                    <li class="top-nav-gradient"><a href="#">Academics</a></li>
+                    <li class="top-nav-gradient"><a href="#">Student Life</a></li>
+                    <li class="top-nav-gradient"><a href="#">Research</a></li>
+                    <li class="top-nav-gradient"><a href="#">Athletics</a></li>
                 </ul>
-            <nav>
+            </nav>
             <div class="main-content">
                 <div class="slider">
-                    <img src="./img/slider.jpg" alt="slider image">
+                    <img src="./img/slider5.jpg" alt="slider image">
                     <div class="slider-small">
                         <ul class="slider-sm" >
                             <li><img src="./img/slider4.jpg" alt="image"></li>
@@ -146,11 +221,11 @@
                 <div class="middle-content">
                     <aside class="sidebar-left">
                         <ul class="sidebar-nav">
-                            <li><a href="#">Future Student</a></li>
-                            <li><a href="#">Current Student</a></li>
-                            <li><a href="#">Faculty</a></li>
-                            <li><a href="#">parents</a></li>
-                            <li><a href="#">Alumni</a></li>
+                            <li class="list-item-gradient"><a href="#">Future Student</a></li>
+                            <li class="list-item-gradient"><a href="#">Current Student</a></li>
+                            <li class="list-item-gradient"><a href="#">Faculty</a></li>
+                            <li class="list-item-gradient"><a href="#">parents</a></li>
+                            <li class="list-item-gradient"><a href="#">Alumni</a></li>
                         </ul>
                     </aside>
                     <div class="latest-news">
@@ -163,7 +238,56 @@
                     <p>asdf</p>
                 </div>
             </div>
-            <footer class="main-footer">footer text</footer>
+            <div class="bottom-container">
+                <div class="bottom-item item-1">
+                    <h2 class="bottom-header">Academics</h2>
+                    <img class="bottom-image" src="./img/bottom1.jpg" alt="image1">
+                    <p class="bottom-text">Four Year Scholars</p>
+                    <p class="bottom-text">Program keeps students on fast track to graduation.</p>
+                    <a class="read-more-link" href="#">Read More</a>
+                </div>
+                <div class="bottom-item item-2">
+                    <h2 class="bottom-header">Student Life</h2>
+                    <img class="bottom-image" src="./img/bottom2.jpg" alt="image1">
+                    <p class="bottom-text">Four Year Scholars</p>
+                    <p class="bottom-text">Program keeps students on fast track to graduation.</p>
+                    <a class="read-more-link" href="#">Read More</a>
+                </div>
+                <div class="bottom-item item-3">
+                    <h2 class="bottom-header">Alumni</h2>
+                    <img class="bottom-image" src="./img/bottom3.jpg" alt="image1">
+                    <p class="bottom-text">Four Year Scholars</p>
+                    <p class="bottom-text">Program keeps students on fast track to graduation.</p>
+                    <a class="read-more-link" href="#">Read More</a>
+                </div>
+            </div>
+            <footer class="main-footer">
+                <div class="footer-container-left">
+                    <img src="./img/fs-seal.gif" alt="logo">
+                    <img class="fs-name-image" src="./img/fs-name.gif" alt="logo2">
+                    <ul class="social-media-icons">
+                        <li>
+                            <a href="http://facebook.com" target="_blank"><img src="./img/32x32-facebook.png" alt="social media icon"></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com" target="_blank"><img src="./img/32x32-instagram.png" alt="social media icon"></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com" target="_blank"><img src="./img/32x32-linkedin.png" alt="social media icon"></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com" target="_blank"><img src="./img/32x32-pinterest.png" alt="social media icon"></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com" target="_blank"><img src="./img/32x32-youtube.png" alt="social media icon"></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com" target="_blank"><img src="./img/32x32-facebook.png" alt="social media icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-container-right">asdf</div>
+            </footer>
         </div> 
     </body>
 </html>
