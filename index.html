@@ -46,7 +46,7 @@
                 footer.main-footer  {
                     width:100%;
                     padding:10px;   
-                    
+                    position:relative;
                 }
                 nav.main-navigation ul {
                     list-style-type:none;
@@ -69,12 +69,14 @@
                 .slider-small {
                     width: 30%;
                     height: 300px;
-                    background-color: blue;
                     float: right;
                 }
                 ul.slider-sm img {
                     width:100%;
-                    height:100px;
+                    height:97.5px;
+                }
+                ul.slider-sm {
+                   list-style-type:none; 
                 }
                 .middle-content {
                     height:300px;
@@ -83,20 +85,18 @@
                 aside.sidebar-left {
                     width: 20%;
                     height: 100%;
-                    background-color: #CCC;
                     float:left;
                 }
                 div.latest-news {
                     position: absolute;
                     height: 100%;
                     width: 50%;
-                    background: red;
                     left: 20%;
                 }
                 aside.sidebar-right {
-                    width: 30%;
+                    width: 28%;
                     height: 100%;
-                    background: green;
+                    padding:1%;
                     float: right;
                 }
                 ul.sidebar-nav   {
@@ -172,7 +172,7 @@
                 }
                 .fs-name-image {
                     position: absolute;
-                    left: 250px; 
+                    margin-left: 20px; 
                 }
                 .social-media-icons {
                     list-style-type:none;
@@ -181,7 +181,45 @@
                     float:right;
                 }
                 ul.social-media-icons img {
-                    width:20px;
+                    width:15px;
+                }
+                .footer-contact {
+                    position: absolute;
+                    left: 155px;
+                    top: 50px;
+                }
+                .footer-contact p a {
+                    text-decoration:none;
+                }
+                .news-right {
+                    width: 66%;
+                    float: left;
+                    height: 100%;
+                    padding:1%;
+                    background-color: white;
+                }
+                .news-left {
+                    width:30%;
+                    height:100%;
+                    padding:1%;
+                    float:right;
+                    
+                }
+                .latest-news h2, .sidebar-right h2 {
+                    font-size:16px;
+                }
+                .date-time {
+                    margin-bottom:7px;
+                    font-size:13px;
+                }
+                .news-left ul, .sidebar-right ul {
+                    list-style-type:none;
+                }
+                .news-left li a, .sidebar-right ul li a {
+                    text-decoration:none;
+                }
+                .news-left li:first-child, .sidebar-right li:first-child {
+                    margin-top:10px;
                 }
         </style>
     </head>
@@ -229,10 +267,46 @@
                         </ul>
                     </aside>
                     <div class="latest-news">
-
+                        <div class="news-right">
+                            <h2>Latest News</h2>
+                            <br>
+                            <p>Ken Fugelsang, renowned enologist:  built a legacy of winemakers</p>
+                            <p class="date-time"><em>02/22/2017 04:41:24 PM</em></p>
+                            <p>Great-grandson of Mexican revolutionary Flores-Magón to speak</p>
+                            <p class="date-time"><em>02/18/2017 02:18:57 PM</em></p>
+                            <p>Campus closed Feb. 20 for Presidents Day</p>
+                            <p class="date-time"><em>02/17/2017 03:20:28 PM</em></p>
+                            <p>5K run/walk to support physical therapy students Feb. 25<p>
+                            <p class="date-time"><em>02/17/2017 03:19:40 PM</em></p>
+                            <p>Nursing mobile health services: San Joaquin Feb. 21, Reedley Feb. 23</p>
+                            <p class="date-time"></em>02/17/2017 03:19:03 PM</em></p>
+                        </div>
+                        <div class="news-left">
+                            <h2>News Sources</h2>
+                            <ul>
+                                <li><a href="#">Bulldog Blog</a></li>
+                                <li><a href="#">Campus Newsletter</a></li>
+                                <li><a href="#">Commencement</a></li>
+                                <li><a href="#">Community Newsletter</a></li>
+                                <li><a href="#">Fresno State Magazine</a></li>
+                                <li><a href="#">Fresno State News</a></li>
+                                <li><a href="#">Go Bulldogs</a></li>
+                                <li><a href="#">The Collegian</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <aside class="sidebar-right">
-
+                        <h2>What's coming up?</h2>
+                        <ul>
+                            <li><a href="#">Bulldog Blog</a></li>
+                            <li><a href="#">Campus Newsletter</a></li>
+                            <li><a href="#">Commencement</a></li>
+                            <li><a href="#">Community Newsletter</a></li>
+                            <li><a href="#">Fresno State Magazine</a></li>
+                            <li><a href="#">Fresno State News</a></li>
+                            <li><a href="#">Go Bulldogs</a></li>
+                            <li><a href="#">The Collegian</a></li>
+                        </ul>
                     </aside>
 
                     <p>asdf</p>
@@ -241,22 +315,29 @@
             <div class="bottom-container">
                 <div class="bottom-item item-1">
                     <h2 class="bottom-header">Academics</h2>
-                    <img class="bottom-image" src="./img/bottom1.jpg" alt="image1">
+                    <a href="http://fresnostate.edu/academics/fouryearscholars/index.html">
+                        <img class="bottom-image" src="./img/bottom1.jpg" alt="image1">
+                    </a>
                     <p class="bottom-text">Four Year Scholars</p>
                     <p class="bottom-text">Program keeps students on fast track to graduation.</p>
-                    <a class="read-more-link" href="#">Read More</a>
+                    <a class="read-more-link" href="http://fresnostate.edu/academics/fouryearscholars/index.html">Read More</a>
                 </div>
                 <div class="bottom-item item-2">
                     <h2 class="bottom-header">Student Life</h2>
-                    <img class="bottom-image" src="./img/bottom2.jpg" alt="image1">
+                    <a href="http://www.fresnostatenews.com/2016/10/19/student-volunteers-to-rejuvenate-valley-childrens-therapy-garden/">
+                        <img class="bottom-image" src="./img/bottom2.jpg" alt="image1">
+                    </a>
                     <p class="bottom-text">Four Year Scholars</p>
                     <p class="bottom-text">Program keeps students on fast track to graduation.</p>
                     <a class="read-more-link" href="#">Read More</a>
                 </div>
                 <div class="bottom-item item-3">
                     <h2 class="bottom-header">Alumni</h2>
-                    <img class="bottom-image" src="./img/bottom3.jpg" alt="image1">
-                    <p class="bottom-text">Four Year Scholars</p>
+                    <a href="https://fresnostatelivewellblog.com/2016/10/10/alumni-highlight-john-hunts-perseverance-gains-him-national-spotlight/">
+                        <img class="bottom-image" src="./img/bottom3.jpg" alt="image1">
+                    </a>
+                    
+                    <p class=S"bottom-text">Four Year Scholars</p>
                     <p class="bottom-text">Program keeps students on fast track to graduation.</p>
                     <a class="read-more-link" href="#">Read More</a>
                 </div>
@@ -265,6 +346,12 @@
                 <div class="footer-container-left">
                     <img src="./img/fs-seal.gif" alt="logo">
                     <img class="fs-name-image" src="./img/fs-name.gif" alt="logo2">
+                    <div class="footer-contact">
+                        <p>5241 N. Maple Ave</p>
+                        <p>Fresno,CA 93740</p>
+                        <p>P 559.278.4240</p>
+                        <p><a href="#" target="_blank">(c) 2017</a></p>
+                    </div>
                     <ul class="social-media-icons">
                         <li>
                             <a href="http://facebook.com" target="_blank"><img src="./img/32x32-facebook.png" alt="social media icon"></a>
